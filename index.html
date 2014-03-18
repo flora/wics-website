@@ -1,4 +1,74 @@
-<!--#include virtual="includes/menu.html"-->
-Hiiiii.
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Language" content="en-US">
+    <meta charset="UTF-8">
+    <meta name="description" content="Brown WiCS: Women in Computer Science">
+    <meta name="keywords" content="">
+    <title>Brown Women in Computer Science</title>
+    <!-- Stylesheets -->
+    <link href="includes/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<script type="text/javascript">
+  function swap(img, newUrl, left) {
+    img.src=newUrl;
+  }
+  window.onload=function() {
+    var images = document.getElementsByTagName('img');
+    for (i = 0; i < images.length; i++) {
+      if (images[i].onmouseout) {
+        images[i].onmouseout();
+      }
+    }
+  }
+</script>
+<body>
+<div id="nav">
+    <div style="position: relative; top: 5px; left: 10px; width: 140px; height: 231px"> 
+        <img src="images/title.png">
+    </div>
+    <div id="navlinks">
+        <div style="position: relative; left: 15px">
+            <a href="index.html"><img
+                onmouseover="swap(this, 'images/home_hover.png')"
+                onmouseout="swap(this, 'images/home.png')"
+            /></a><br>
+            <a href="about.html"><img
+                onmouseover="swap(this, 'images/about_hover.png')"
+                onmouseout="swap(this, 'images/about.png')"
+            /></a><br>
+            <a href="events.html"><img
+                onmouseover="swap(this, 'images/events_hover.png')"
+                onmouseout="swap(this, 'images/events.png')"
+            /></a><br>
+            <a href="blog.html"><img
+                onmouseover="swap(this, 'images/blog_hover.png')"
+                onmouseout="swap(this, 'images/blog.png')"
+            /></a><br>
+            <a href="mentorship.html"><img
+                onmouseover="swap(this, 'images/mentorship_hover.png')"
+                onmouseout="swap(this, 'images/mentorship.png')"
+            /></a><br>
+            <a href="photos.html"><img
+                onmouseover="swap(this, 'images/photos_hover.png')"
+                onmouseout="swap(this, 'images/photos.png')"
+            /></a><br>
+            <a href="resources.html"><img
+                onmouseover="swap(this, 'images/resources_hover.png')"
+                onmouseout="swap(this, 'images/resources.png')"
+            /></a><br>
+        </div>
+    </div>
+    <div id="navbuttons">
+        <a href="mailto:wics@lists.cs.brown.edu"><img src="images/mail_button.png" width="30px" height="30px"></a>
+        <a href="http://facebook.com/brownwics"><img src="images/fb_button.png" width="30px" height="30px"></a>
+    </div>
+</div><br>
+<div id="textbody">
+
+<iframe id="text-frame" src="http://blogs.brown.edu/wics/" frameBorder="0"></iframe>
+
+</div>
 </body>
 </html>
