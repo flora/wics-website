@@ -1,9 +1,15 @@
 *{padding: 0px; margin: 0px;}
 
+@font-face {
+    font-family: Raleway;
+    src: url("../fonts/Raleway/Raleway-Light.ttf");
+}
+
 body {
 	background-color: #ff8b74;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	color: #000000;
+	font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+	color: #000;
     background-image: url("../images/bg_logo.png");
     background-position: left bottom;
     background-repeat: no-repeat;
@@ -23,7 +29,7 @@ html {
 	float: left;
 	width: 200px;
 	height: 100%;
-    left: 15px;
+    left: 25px;
     top: 10px;
 }
 
@@ -47,12 +53,24 @@ html {
     left: 32px;
 }
 
+#textbodyblog {
+    position: relative;
+    height: 100%;
+    left: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow-x: hidden;
+    margin-right: 30px;
+}
+
 #textbody {
     position: relative;
     height: 100%;
-    left: -10px;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin-right: 15px;
+    left: 5px;
+    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-right: 30px;
     overflow-x: hidden;
 }
 
@@ -63,9 +81,70 @@ html {
     height: 100%;
 }
 
+.mentor {                                                                       
+    width: 375px;                                                               
+    padding: 10px;                                                              
+    display: inline-block;                                                      
+    margin-bottom: 30px;                                                        
+}                                                                               
+                                                                                
+.mentor-photo {                                                                 
+    display: inline-block;                                                      
+    padding: 5px;                                                               
+    border: 1px solid #ddd;                                                     
+    border-radius: 2px;                                                         
+    box-shadow: 1px 1px 3px #ddd;                                               
+    width: 150px;                                                               
+    height: 200px;                                                              
+    overflow: hidden;                                                           
+    float: left;                                                                
+    margin-right: 10px;                                                         
+}                                                                               
+                                                                                
+.mentor-photo img {                                                             
+    height: 200px;                                                              
+    position: relative;                                                         
+}     
+
+.mentor-bio {                                                                   
+    width: inherit;                                                             
+    display: inline-block;                                                      
+    vertical-align: top;                                                        
+    margin-left: 10px;                                                          
+    font-size: 14px;                                                            
+    color: #444;                                                                
+}                                                                               
+                                                                                
+.mentor-name {                                                                  
+    font-size: 22px;                                                            
+}                                                                               
+                                                                                
+.mentor-login {                                                                 
+    color: rgb(255, 0, 112);                                                    
+    font-style: italic;                                                         
+    font-family: serif;                                                         
+    font-size: 21px;                                                            
+    margin: 5px 0px;                                                            
+                                                                                
+}                                                                               
+                                                                                
+.mentor-answer {                                                                
+    margin-left: 5px;                                                           
+    color: #999;                                                                
+    font-size: 13px;                                                            
+}
+
+.page-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.page-content {
+}
+
 a:link {
-	color: ;
-	font-weight: ;
+	color: #000;
+	font-weight: bold;
 }
 
 a:hover {
